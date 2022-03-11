@@ -1,10 +1,10 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
- * We are using srand to generate random numbers and printing
+ * Description: We are using srand to generate random numbers and printing
  * if they are positive or negative numbers
  * Return: 0
  */

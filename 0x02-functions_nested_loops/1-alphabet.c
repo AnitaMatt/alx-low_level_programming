@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include "main.h"
+
+
+
+
+
 /**
- * void print_alphabet(void) - Printing the alphabet from a function
+ * print_alphabet - Printing the alphabet from a function
+ * Description:printing alphabet and a newline
  * Return: 0
- * Description: printing alphabet and a newline
  */
 
 void print_alphabet(void)

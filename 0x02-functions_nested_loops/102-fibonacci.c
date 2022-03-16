@@ -13,10 +13,10 @@ int main(void)
 	unsigned long int b = 2;
 	int count = 50;
 
-	printf("%ld, %ld, ", a,b);
+	printf("%ld, %ld, ", a, b);
 	for (i = 3; i <= count; i++)
 	{
-		c = a +b;
+		c = a + b;
 		a = b;
 		b = c;
 

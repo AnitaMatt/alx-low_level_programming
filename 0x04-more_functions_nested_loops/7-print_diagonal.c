@@ -28,6 +28,6 @@ void print_diagonal(int n)
 			}
 		}
 	}
-	if (n <= 0)
+	else
 		_putchar('\n');
 }

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,21 +8,21 @@
 
 char *leet(char *s)
 {
-	int i;
+	int i = 0;
+	int j = 0;
+	char *l = "aAeEoOlLtT";
+	char *n = "4433001177";
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*(s + i) != '\0')
 	{
-		while (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		while (*(l + j) != '\0')
+		{
+			if (*(s + i) == *(l + j))
+				*(s + i)  = *(n + j);
+			j++;
+		}
+		j = 0;
+		i++;
 	}
-
 	return (s);
 }

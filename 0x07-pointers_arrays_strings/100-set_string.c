@@ -3,7 +3,7 @@
 
 /**
  * set_string - set value of a pointer to char
- * @s: double pointer\
+ * @s: double pointer
  * @to: string
  * Return: void
  */

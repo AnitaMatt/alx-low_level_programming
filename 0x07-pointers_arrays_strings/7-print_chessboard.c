@@ -4,7 +4,7 @@
 
 /**
  * print_chessboard - prints a chessbaord
- * @a[8]: pointer to an array
+ * @a: pointer to an array
  * Return:  nothing
  */
 
@@ -17,7 +17,7 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			_putchar(a[i][j]);
+			_putchar((a[i][j]));
 		}
 		_putchar('\n');
 	}

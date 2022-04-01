@@ -2,6 +2,8 @@
 
 /**
  * main - function to print the new name of the program
+ * @argv:  arguments passed
+ * @argc: argument count
  * Return: 0
  */
 

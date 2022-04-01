@@ -16,39 +16,35 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-
 	temp = atoi(argv[1]);
-
 	while (temp)
-        {
-                if (temp == 1)
-                {
-                        count++;
-                        temp -= 1;
-                }
-                else if ((temp > 1) && (temp < 5))
-                {
-                        count++;
-                        temp -= 2;
-                }
-                else if ((temp >= 5) && (temp < 10))
-                {
-                        count++;
-                        temp -= 5;
-                }
-                else if ((temp >= 10) && (temp < 25))
-                {
-                        count++;
-                        temp -= 10;
-                }
-                else if (temp >= 25)
-                {
-                        count++;
-                        temp -= 25;
-                }
-        }
-
+	{
+		if (temp == 1)
+		{
+			count++;
+			temp -= 1;
+		}
+		else if ((temp > 1) && (temp < 5))
+		{
+			count++;
+			temp -= 2;
+		}
+		else if ((temp >= 5) && (temp < 10))
+		{
+			count++;
+			temp -= 5;
+		}
+		else if ((temp >= 10) && (temp < 25))
+		{
+			count++;
+			temp -= 10;
+		}
+		else if (temp >= 25)
+		{
+			count++;
+			temp -= 25;
+		}
+	}
 	printf("%d\n", count);
-
 	return (0);
 }

@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 	temp = atoi(argv[1]);
 	while (temp)
 	{
+		if (temp < 0)
+		{
+			printf("%d\n", 0);
+			return (0);
+		}
 		if (temp == 1)
 		{
 			count++;

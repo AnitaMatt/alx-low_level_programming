@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2;
-	char *op;
+	char *oper;
 
 	if (argc != 4)
 	{
@@ -33,8 +33,8 @@ int main(int argc, char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	op = argv[2];
+	oper = argv[2];
 
-	printf("%d\n", get_op_func(op)(num1, num2));
+	printf("%d\n", get_op_func(oper)(num1, num2));
 	return (0);
 }

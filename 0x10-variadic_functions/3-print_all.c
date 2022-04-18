@@ -17,7 +17,6 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	int j = 0;
 	char *separator = "";
-
 	printAll funcs[] = {
 		{"c", print_char},
 		{"i", print_int},
@@ -26,7 +25,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(arg, format);
-	i = 0;
+
 	while (format && *(format + i))
 	{
 		j = 0;
@@ -47,7 +46,7 @@ void print_all(const char * const format, ...)
 }
 /**
  * print_char - prints a char
- * @args: args passed
+ * @a: args passed
  */
 void print_char(va_list a)
 {
@@ -58,31 +57,34 @@ void print_char(va_list a)
 }
 /**
  * print_int - prints an int
- * @args: args passed
+ * @a: args passed
  */
 void print_int(va_list a)
 {
 	int i;
+
 	i = va_arg(a, int);
 	printf("%d", i);
 }
 /**
  * print_float - prints a float
- * @args: args passed
+ * @a: args passed
  */
 void print_float(va_list a)
 {
 	double fl;
+
 	fl = va_arg(a, double);
 	printf("%f", fl);
 }
 /**
  * print_string - prints  a string
- * @args: args passed
+ * @a: args passed
  */
 void print_string(va_list a)
 {
 	char *s;
+
 	s = va_arg(a, char *);
 
 	if (s == NULL)

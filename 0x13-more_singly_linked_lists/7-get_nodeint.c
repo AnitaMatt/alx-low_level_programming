@@ -27,10 +27,10 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	temp = head;
 	while ((temp != 0))
 	{
-		temp = temp->next;
 		count++;
-		if (count == index)
+		if ((count - 1) == index)
 			break;
+		temp = temp->next;
 	}
 	return (temp);
 }

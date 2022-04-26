@@ -41,13 +41,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		{
 			new->next = temp->next;
 			*head = new;
-			break;
+			return (new);
 		}
 		else if ((count) == idx)
 		{
 			new->next = temp->next;
 			temp->next = new;
-			break;
+			return (new);
 		}
 		temp = temp->next;
 	}

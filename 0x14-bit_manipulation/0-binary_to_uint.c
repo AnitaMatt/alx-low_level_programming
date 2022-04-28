@@ -6,7 +6,6 @@
  * @b: binary string
  * Return:  unsigned int
  */
-int power(int,int);
 
 unsigned int binary_to_uint(const char *b)
 {
@@ -34,6 +33,12 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (sum);
 }
+/**
+ * power - function to return power
+ * @x:  x int
+ * @y: y
+ * Return: int
+ */
 int power(int x, int y)
 {
 	int i = 0;

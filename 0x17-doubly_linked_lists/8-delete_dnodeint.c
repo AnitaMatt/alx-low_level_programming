@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  *delete_dnodeint_at_index -deletes the node at index index of a linked list
  *@head: input of type dlistint_t
